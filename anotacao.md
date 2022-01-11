@@ -24,6 +24,8 @@
 
 - \.     <- vai apresentar somente o ponto
 
+- \?     <- Corresponde a expressão que o precede repetido 0 ou 1 vez. Equivalente à {0,1}.
+
 > <h2>Quantifier</h2>
 >Uma forma de mostrar quantos caracteres deveraão ser apresentados de forma mais eficiente
 
@@ -39,5 +41,15 @@ Como o Regex para identificar o CEP?
 >Qual padrão podemos utilizar para encontrar o número telefônico? Por exemplo: (21) 3216-2345<br/>
 >>\(\d{2}\) \d{4}-\d{4}
 
+>Na frase agora nosso CPF não esta formatado com ponto, como resolvemos? usando o Quantifier ? ele mostra se tiver ou não
+>>João Fulano,12345678900,21 de Maio de 1993,(21) 3079-9987,Rua do Ouvidor,50,20040-030,Rio de Janeiro<br/>
+Como o Regex para identificar o CEP?
+>>\d{3}\.?\d{3}\.?\d{3}-?\d{2}
+
 # Classes de Caracteres
+> <h2>Posso definir um conjunto de caracteres que deveram aparecer na posição definida</h2>
+> Se quisermos definir um conjunto que caracteres que possivelmente podem aparecer em um campo de CPF usamos as Classes<br/>
+> 123.123.123-12 <br />
+> \d{3}\.?\d{3}\.?\d{3}[@\.-]\d{2} <- repare no conjunto que caracteres entre [ ], todos os definidos poderam aparecer
+
 
