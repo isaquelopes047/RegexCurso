@@ -50,6 +50,14 @@ Como o Regex para identificar o CEP?
 > <h2>Posso definir um conjunto de caracteres que deveram aparecer na posição definida</h2>
 > Se quisermos definir um conjunto que caracteres que possivelmente podem aparecer em um campo de CPF usamos as Classes<br/>
 > 123.123.123-12 <br />
-> \d{3}\.?\d{3}\.?\d{3}[@\.-]\d{2} <- repare no conjunto que caracteres entre [ ], todos os definidos poderam aparecer
+> \d{3}\.?\d{3}\.?\d{3}[@\.-]\d{2} <- repare no conjunto que caracteres entre [ ], todos os definidos poderam aparecer<br /><br />
+
+
+> Classe de Chars<br />
+>> [A-Z] - Letras de A até Z<br />
+>> [123] - 1,2 ou 3<br />
+>> \d - todos os digitos [0-9]<br />
+>> \s - whitespace [ \t\r\n\f]<br />
+>> \w - wordchar [A-Za-z0-9]<br />
 
 
